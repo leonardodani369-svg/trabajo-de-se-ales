@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dncxujshbxt8f"]
+
+[ext_resource type="Texture2D" uid="uid://c0f3vvctal5va" path="res://assets/block_violet.png" id="1"]
+
+[node name="VioletGenerator" type="TextureButton"]
+texture_normal = ExtResource("1")
