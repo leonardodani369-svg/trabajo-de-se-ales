@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://nwbl03ueqyor"]
+
+[ext_resource type="Texture2D" uid="uid://7icqglxkk1u1" path="res://assets/block_red.png" id="1"]
+
+[sub_resource type="GDScript" id="GDScript_y0cs6"]
+script/source = "extends TextureButton
+# aca esta el reset
+
+func _on_button_down() -> void:
+	generate_block()
+
+func generate_block(): #es para instanciar
+	var block = preload(\"res://scenes/Blocks/Red/BlockRed.tscn\").instantiate()
+	add_child(block)
+
+
+
+	
+"
+
+[node name="RedGenerator" type="TextureButton" unique_id=1398666113]
+texture_normal = ExtResource("1")
+script = SubResource("GDScript_y0cs6")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
